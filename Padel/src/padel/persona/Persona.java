@@ -1,6 +1,6 @@
 package padel.persona;
 
-public class Persona {
+public abstract class Persona {
 	//Atributos
 	private String nombre;
 	private String apellidos;
@@ -31,6 +31,24 @@ public class Persona {
 			
 		}
 		
+		
+		
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
 	}
 
 	@Override
@@ -55,5 +73,8 @@ public class Persona {
 	return iguales;
 	}
 	
-	
+	public void saludar() {
+		
+		System.out.println("Hola soy " + getNombre() + getApellidos() + "y soy " + getClass() );
+	}
 }
