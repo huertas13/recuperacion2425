@@ -11,6 +11,22 @@ public abstract class Jugador extends Persona {
 
 }
 
+	
+	
+
+	public int getCodSocio() {
+		return codSocio;
+	}
+
+
+
+
+	public void setCodSocio(int codSocio) {
+		this.codSocio = codSocio;
+	}
+
+
+
 
 	public boolean equals (Object obj) {
 		

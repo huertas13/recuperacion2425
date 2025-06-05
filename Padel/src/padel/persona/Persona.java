@@ -1,6 +1,6 @@
 package padel.persona;
 
-public abstract class Persona {
+public abstract class Persona implements Comparable<Persona> {
 	//Atributos
 	private String nombre;
 	private String apellidos;
@@ -76,5 +76,25 @@ public abstract class Persona {
 	public void saludar() {
 		
 		System.out.println("Hola soy " + getNombre() + getApellidos() + "y soy " + getClass() );
+}
+
+
+
+	@Override
+	
+	public int compareTo (Persona o) {
+		
+		
+		
+		
+		
+		
+		
 	}
+
+
+
+
+
+
 }
